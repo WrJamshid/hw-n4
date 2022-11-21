@@ -1,0 +1,77 @@
+.collection-list
+{
+  max-width: 1111px;
+  margin: 0 auto;
+  background-image: url('/assets/images/collection-text-desktop.png');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 136px;
+  padding-top: 140px;
+  margin-bottom: 200px;
+}
+.collection-block
+{
+  max-width: 256px;
+  height: 193px;
+}
+.collection-title
+{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
+}
+.collection-text
+{
+  @include primery-text(#333D4B);
+}
+@media screen and (max-width:1130px)
+{
+  .collection-list{
+    max-width: 689px;
+    flex-direction: column;
+    background-image: url('/assets/images/collection-text-tablet.png');
+    background-position: center 0;
+  }
+  .collection-item
+  {
+    display: flex;
+    align-items: center;
+  }
+  .collection-title
+  {
+    text-align: start;
+  }
+  .collection-text
+  {
+    text-align: start;
+    width: 282px;
+  }
+}
+@media screen and (max-width:740px)
+{
+  .collection-list
+  {
+    background-image: url('/assets/images/collection-text-mobile.png');
+    
+  }
+  .collection-item
+  {
+    max-width: 375px;
+    flex-direction: column;
+  }
+  .collection-title
+  {
+    text-align: center;
+  }
+  .collection-text
+  {
+    text-align: center;
+    width: 282px;
+  }
+}

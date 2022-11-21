@@ -1,0 +1,35 @@
+@mixin primery-text($color) {
+  width: 255px;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: $color;
+}
+@mixin site-btn {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;  
+  color: #FEFCF7;
+  background: #0E8784;
+  border-radius: 6px;
+  padding: 15.5px 31px;
+}
+@mixin site-btn__hover {
+  background: #66D2CF;
+}
+@mixin navbar-link {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
