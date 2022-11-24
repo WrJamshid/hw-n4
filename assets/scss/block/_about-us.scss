@@ -1,0 +1,79 @@
+.about-us__page
+{
+  background-image: url('/assets/images/desktop-about-us-img.jpg');
+  padding: 137px 0 137px 85px;
+  margin-bottom: 168px;
+  border-radius: 12px;
+}
+.about-us__title
+{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+}
+.about-us__text
+{
+  max-width: 445px;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;  
+  color: #FEFCF7;
+  margin-top: 24px;
+}
+@media screen and (max-width:900px)
+{
+  .about-us__page
+  {
+    background-image: url('/assets/images/tablet-about-us-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (max-width:768px)
+{
+  .about-us__title
+  {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about-us__text
+  {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width:745px)
+{
+  .about-us__page
+  {
+    background-image: url('/assets/images/mobile-about-us-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }  
+}
+@media screen and (max-width:622px)
+{
+  .about-us__page
+  {
+    padding: 111px 24px 87px 24px;
+    
+  }
+  .about-us__title
+  {
+    text-align: center;
+    margin: 0 auto;
+  }  
+  .about-us__text
+  {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    max-width: 279px;
+  }
+}

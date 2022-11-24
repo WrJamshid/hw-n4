@@ -1,15 +1,26 @@
 .choose
 {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
 }
-.choose-container
+.choose__box
 {
-  max-width: 1280px;
-  height: 577px;
   background-color: $dark-gray-blue;
+  padding-top: 100px;
+  padding-bottom: 86px;
   border-radius: 12px;
+  position: relative;
 }
-.choose-first-title
+.choose__wrapper
+{
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  border-radius: 12px;
+  background-color: $dark-gray-blue;
+  bottom: -213px;
+  z-index: -1;
+}
+.choose__title
 {
   font-family: $main-font;
   font-style: normal;
@@ -18,215 +29,150 @@
   line-height: 48px;
   text-align: center;
   color: #FEFCF7;
-  padding-top: 100px;
+  margin-bottom: 32px;
 }
-.choose-first-text
+.choose__text
 {
   font-family: $second-font;
   max-width: 540px;
-  margin: 0 auto;
-  margin-top: 32px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px; 
+  line-height: 26px;
   text-align: center;
   color: #FEFCF7;
   mix-blend-mode: normal;
   opacity: 0.8;
-  margin-bottom: 86px;
-}
-.choose-list
-{
   margin: 0 auto;
-  width: 100%;
-  max-width: 1111px;
+}
+.choose__list
+{
+  max-width: 86%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  gap: 30px;
+
 }
-.choose-item
+.choose__item
 {
-  width: 100%;
   max-width: 350px;
-  height: 382px;
-  background-color: $dark-cyan;
-  border-radius: 12px;
+  padding: 72px 48px 48px 47px;
+  background: #0E8784;
+  border-radius: 8px;
+  text-align: center;
 }
-.choose-item:first-child
+.choose__item:first-child
 {
-  background-image: url('/assets/images/coffee-bean.svg');
-  background-repeat: no-repeat;
-  background-position: center 72px;
+  &::before
+  {
+    content: '';
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/coffee-bean.svg');
+    margin-bottom: 56px;
+  }
 }
-.choose-item:nth-child(2)
+.choose__item:nth-child(2)
 {
-  background-image: url('/assets/images/coffe-gift.svg');
-  background-repeat: no-repeat;
-  background-position: center 72px;
+  &::before
+  {
+    content: '';
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/coffe-gift.svg');
+    margin-bottom: 56px;
+  }
 }
-.choose-item:last-child
+.choose__item:last-child
 {
-  background-image: url('/assets/images/coffe-shipping.svg');
-  background-repeat: no-repeat;
-  background-position: center 83px;
+  &::before
+  {
+    content: '';
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/coffe-shipping.svg');
+    background-position: center;
+    margin-bottom: 56px;
+  }
 }
-.choose-title
+.choose__sub-title
 {
   font-family: $main-font;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
-  text-align: center;
   color: #FEFCF7;
-  padding-top: 200px;
   margin-bottom: 24px;
 }
-.choose-text
+.choose__description
 {
   @include primery-text(#FEFCF7);
-  margin: 0 auto;
 }
-@media screen and (max-width:1105px)
+@media screen and (max-width:1000px)
 {
-  .choose-container
-  {
-    
-    height: 573px;
-  }
-  .choose-first-title
-  {
-    font-size: 32px;
-    padding-top: 56px;
-  }
-  .choose-first-text
-  {
-    max-width: 497px;
-    margin-top: 24px;
-    font-size: 15px;
-    line-height: 25px; 
-    margin-bottom: 70px;
-  }
-  .choose-list
+  .choose__list
   {
     flex-direction: column;
-    height: 588px;
-  }
-  .choose-item
+  } 
+  .choose__item
   {
-    max-width: 573px;
-    height: 180px;
-  }
-  .choose-item:first-child
-  {
-    background-image: url('/assets/images/coffee-bean.svg');
-    background-repeat: no-repeat;
-    background-position: left 70px top 52px;
-  }
-  .choose-item:nth-child(2)
-  {
-    background-image: url('/assets/images/coffe-gift.svg');
-    background-repeat: no-repeat;
-    background-position:  70px 52px;
-  }
-  .choose-item:last-child
-  {
-    background-image: url('/assets/images/coffe-shipping.svg');
-    background-repeat: no-repeat;
-    background-position: 70px 62px;
-  }
-  .choose-title
-  {
-    text-align: start;
-    padding-left: 181px;
-    padding-top: 41px;
-    margin-bottom: 16px;
-  }
-  .choose-text
-  {
+    max-width: 100%;
     width: 100%;
-    max-width: 526px;
+    padding: 41px ;
+    display: flex;
+    align-items: center;
     text-align: start;
-    margin: 0;
-    padding-left: 181px;
-    font-size: 15px;
+  }
+  .choose__content-block
+  {
+    margin-left: 70px;
+  }
+  .choose__item::before
+  {
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+  .choose__wrapper
+  {
+    height: 363px;
+    bottom: -322px;
   }
 }
-@media screen and (max-width:650px)
+@media screen and (max-width:700px) 
 {
-  .choose-container
+  .choose__list
   {
-    background: #2C343E;
-    border-radius: 10px;
-    height: 902px;
-    position: relative;
-    .choose-block
-    {
-      width: 100%;
-      height: 270px;
-      background-color: $dark-gray-blue;
-      margin-bottom: 64px;
-      padding-bottom: 10px;
-      overflow: hidden;
-      border-radius: 10px;
-    }
+    width: 100%;
   }
-  .choose-first-title
+  .choose__item
   {
-    font-size: 32px;
-    padding-top: 54px;
+    max-width: 100%;
+    padding: 72px 48px 48px 47px;
+    flex-direction: column;
     text-align: center;
   }
-  .choose-first-text
+  .choose__content-block
   {
-    text-align: center;
-    max-width: 279px;
-    margin-top: 24px;
+    margin-left: 0;
   }
-  .choose-list
+  .choose__item::before
   {
-    max-width: max-content;
-    height: 1194px;
-    padding: 0 20px;
+    margin-bottom: 56px;
   }
-  .choose-item
+  .choose__wrapper
   {
-    padding: 0 42px;
-    height: 382px;
-    overflow: hidden;
+    height: 763px;
+    bottom: -600px;
   }
-  .choose-title
+  .choose__text
   {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin: 0 auto;
-    padding-top: 200px;
-  }
-  .choose-text
-  {  
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .choose-item:first-child
-  {
-    background-image: url('/assets/images/coffee-bean.svg');
-    background-repeat: no-repeat;
-    background-position: center 72px;
-  }
-  .choose-item:nth-child(2)
-  {
-    background-image: url('/assets/images/coffe-gift.svg');
-    background-repeat: no-repeat;
-    background-position: center 72px;
-  }
-  .choose-item:last-child
-  {
-    background-image: url('/assets/images/coffe-shipping.svg');
-    background-repeat: no-repeat;
-    background-position: center 82px;
+    padding: 0 24px;
   }
 }

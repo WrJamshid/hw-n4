@@ -1,0 +1,80 @@
+.headquartes
+{
+  padding-bottom: 168px;
+  padding-left: 145px;
+}
+.headquarters-text
+{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+  margin-bottom: 72px;
+}
+.headquartes-title
+{
+  max-width: 1045px;
+  display: flex;
+  align-items: center;
+  gap: 95px;
+}
+.headquartes-title__item:first-child
+{
+  background-image: url('/assets/images/uksvg.svg');
+  background-repeat: no-repeat;
+}
+.headquartes-title__item:nth-child(2)
+{
+  background-image: url('/assets/images/canadasvg.svg');
+  background-repeat: no-repeat;
+}
+.headquartes-title__item:last-child
+{
+  background-image: url('/assets/images/australiasvg.svg');
+  background-repeat: no-repeat;
+}
+.headquartes__sub-title
+{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+  color: $dark-gray-blue;
+  padding-top: 97px;
+  margin-bottom: 24px;
+}
+.headquartes-list__item
+{
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
+@media screen and (max-width:1000px)
+{
+  .headquartes
+  {
+    padding-left: 20px;
+    padding-right: 20px;
+  } 
+}
+@media screen and (max-width:768px)
+{
+  .headquarters-block
+  {
+    text-align: center;
+  }
+  .headquartes-title
+  {
+    flex-direction: column;
+  }  
+  .headquartes-title__item
+  {
+    background-position-x: center;
+  }
+}

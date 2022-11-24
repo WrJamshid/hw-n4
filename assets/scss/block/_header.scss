@@ -20,6 +20,10 @@
 .site-header__link
 {
   @include navbar-link;
+  &:hover
+  {
+    color: #000;
+  }
 }
 .site-header__hambuger
 {
