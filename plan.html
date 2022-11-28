@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Izzattillayev Jamshid">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>coffe</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__container">
+      <a class="site-header__logo-link" href="/index.html">
+        <img src="./assets/images/site-logo.svg" alt="site logo coffe roaster two coffe and text">
+      </a>
+      <nav class="site-header__nav">
+        <ul class="site-header__list">
+          <li class="site-header__item">
+            <a class="site-header__link" href="/index.html">HOME</a>
+          </li>
+          <li class="site-header__item">
+            <a class="site-header__link" href="/about.html">ABOUT US</a>
+          </li>
+          <li class="site-header__item">
+            <a class="site-header__link" href="/plan.html">Create your plan</a>
+          </li>
+        </ul>
+        <button class="site-header__hambuger"></button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="plan">
+      <div class="container plan-container">
+        <div class="plan-block">
+          <h2 class="plan-title">
+            Create a plan
+          </h2>
+          <p class="plan-description">
+            Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="user-coffe">
+      <div class="container user-coffe__container">
+        <div class="user-coffe__block plan-page">
+          <div class="horizontal-line plan-page__line">
+            <span class="horizontal-line__border plan-page__span-line"></span>
+          </div>
+          <ul class="user-coffe__block-list">
+            <li class="user-coffe__block-item">
+              <div class="user-coffe__block-content">
+                <h4 class="user-coffe__block-title plan__text-white">
+                  Pick your coffee
+                </h4>
+                <p class="user-coffe__block-text plan__text-white">
+                  Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.
+                </p>
+              </div>
+            </li>
+            <li class="user-coffe__block-item">
+              <div class="user-coffe__block-content">
+                <h4 class="user-coffe__block-title plan__text-white">
+                  Choose the frequency
+                </h4>
+                <p class="user-coffe__block-text plan__text-white">
+                  Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.
+                </p>
+              </div>
+            </li>
+            <li class="user-coffe__block-item">
+              <div class="user-coffe__block-content">
+                <h4 class="user-coffe__block-title plan__text-white">
+                  Receive and enjoy!
+                </h4>
+                <p class="user-coffe__block-text plan__text-white">
+                  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="create-plan">
+        <div class="container create-plan__container">
+          <div class="create-plan__wrapper">
+            <ul class="wrapper-list">
+              <li class="wrapper_item black-item">
+                <span class="green-span">01</span> Preferences</li>
+                <li class="wrapper_item">
+                  <span>02</span> Bean Type</li>
+                  <li class="wrapper_item">
+                    <span>03</span> Quantity</li>
+                    <li class="wrapper_item">
+                      <span>04</span> Grind Option</li>
+                      <li class="wrapper_item">
+                        <span>05</span> Deliveries</li>
+                      </ul>
+                    <div class="user-choose__dropdown">
+                      
+                      <div class="test">
+                        <div class="dropdown">
+                          <input type="text" class="textbox"
+                          placeholder="How do you drink your coffee?" readonly>
+                          <div class="option">
+                            <div onclick="show('Capsule')" class="option_item green_active">
+                            <h2 class="option-title">Capsule</h2>
+                            <p class="option-text">Compatible with Nespresso systems and similar brewers</p>
+                            </div>
+                            <div  onclick="show('Filter')"  class="option_item">
+                              <h2 class="option-title">Filter</h2>
+                              <p class="option-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                            </div>
+                            <div  onclick="show('Espressos')"  class="option_item">
+                              <h2 class="option-title">Espresso</h2>
+                              <p class="option-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                            </div>
+                          </div>
+                        </div></div>
+                      <div class="test">
+                        <div class="dropdown1">
+                          <input type="text" class="textbox1"
+                          placeholder="How do you drink your coffee?" readonly>
+                          <div class="option1">
+                            <div onclick="show('Capsule')" class="option_item1 green_active1">
+                            <h2 class="option-title1">Capsule</h2>
+                            <p class="option-text1">Compatible with Nespresso systems and similar brewers</p>
+                            </div>
+                            <div  onclick="show('Filter')"  class="option_item1">
+                              <h2 class="option-title1">Filter</h2>
+                              <p class="option-text1">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                            </div>
+                            <div  onclick="show('Espressos')"  class="option_item1">
+                              <h2 class="option-title1">Espresso</h2>
+                              <p class="option-text1">Dense and finely ground beans for an intense, flavorful experience</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="test">
+                        <div class="dropdown2">
+                          <input type="text" class="textbox2"
+                          placeholder="How do you drink your coffee?" readonly>
+                          <div class="option2">
+                            <div onclick="show('Capsule')" class="option_item2 green_active2">
+                            <h2 class="option-title2">Capsule</h2>
+                            <p class="option-text2">Compatible with Nespresso systems and similar brewers</p>
+                            </div>
+                            <div  onclick="show('Filter')"  class="option_item2">
+                              <h2 class="option-title2">Filter</h2>
+                              <p class="option-text2">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                            </div>
+                            <div  onclick="show('Espressos')"  class="option_item2">
+                              <h2 class="option-title2">Espresso</h2>
+                              <p class="option-text2">Dense and finely ground beans for an intense, flavorful experience</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="test">
+                        
+                        <div class="dropdown3">
+                          <input type="text" class="textbox3"
+                          placeholder="How do you drink your coffee?" readonly>
+                          <div class="option3">
+                            <div onclick="show('Capsule')" class="option_item3 green_active3">
+                            <h2 class="option-title3">Capsule</h2>
+                            <p class="option-text3">Compatible with Nespresso systems and similar brewers</p>
+                            </div>
+                            <div  onclick="show('Filter')"  class="option_item3">
+                              <h2 class="option-title3">Filter</h2>
+                              <p class="option-text3">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                            </div>
+                            <div  onclick="show('Espressos')"  class="option_item3">
+                              <h2 class="option-title3">Espresso</h2>
+                              <p class="option-text3">Dense and finely ground beans for an intense, flavorful experience</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="test">
+                        <div class="dropdown4">
+                          <input type="text" class="textbox4"
+                          placeholder="How do you drink your coffee?" readonly>
+                          <div class="option4">
+                            <div onclick="show('Capsule')" class="option_item4 green_active4">
+                            <h2 class="option-title4">Capsule</h2>
+                            <p class="option-text4">Compatible with Nespresso systems and similar brewers</p>
+                            </div>
+                            <div  onclick="show('Filter')"  class="option_item4">
+                              <h2 class="option-title4">Filter</h2>
+                              <p class="option-text4">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                            </div>
+                            <div  onclick="show('Espressos')"  class="option_item4">
+                              <h2 class="option-title4">Espresso</h2>
+                              <p class="option-text4">Dense and finely ground beans for an intense, flavorful experience</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="mobile-dropdown">
+                      <div>
+                        
+                      <div class="mobile-dropdown__block">
+                        <p class="md__block-text">How do you drink your coffee?</p>
+                        <div class="md__block-wrapper">
+                          <div class="md_item md__item-active">
+                          <h2 class="md-title">Capsule</h2>
+                          <p class="md-text">Compatible with Nespresso systems and similar brewers</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Filter</h2>
+                            <p class="md-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Espresso</h2>
+                            <p class="md-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="mobile-dropdown__block">
+                        <p class="md__block-text">How do you drink your coffee?</p>
+                        <div class="md__block-wrapper">
+                          <div class="md_item md__item-active">
+                          <h2 class="md-title">Capsule</h2>
+                          <p class="md-text">Compatible with Nespresso systems and similar brewers</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Filter</h2>
+                            <p class="md-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Espresso</h2>
+                            <p class="md-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="mobile-dropdown__block">
+                        <p class="md__block-text">How do you drink your coffee?</p>
+                        <div class="md__block-wrapper">
+                          <div class="md_item md__item-active">
+                          <h2 class="md-title">Capsule</h2>
+                          <p class="md-text">Compatible with Nespresso systems and similar brewers</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Filter</h2>
+                            <p class="md-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Espresso</h2>
+                            <p class="md-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="mobile-dropdown__block">
+                        <p class="md__block-text">How do you drink your coffee?</p>
+                        <div class="md__block-wrapper">
+                          <div class="md_item md__item-active">
+                          <h2 class="md-title">Capsule</h2>
+                          <p class="md-text">Compatible with Nespresso systems and similar brewers</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Filter</h2>
+                            <p class="md-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Espresso</h2>
+                            <p class="md-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="mobile-dropdown__block">
+                        <p class="md__block-text">How do you drink your coffee?</p>
+                        <div class="md__block-wrapper">
+                          <div class="md_item md__item-active">
+                          <h2 class="md-title">Capsule</h2>
+                          <p class="md-text">Compatible with Nespresso systems and similar brewers</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Filter</h2>
+                            <p class="md-text">For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                          </div>
+                          <div class="md_item">
+                            <h2 class="md-title">Espresso</h2>
+                            <p class="md-text">Dense and finely ground beans for an intense, flavorful experience</p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      
+                    </div>
+                    <div class="order-summary__con">
+                      <div class="order-summary">
+                        <h5>Order Summary</h5>
+                        <p class="order-summary__text">
+                          “I drink my coffee as <span>___</span>, with a <span>___</span> type of bean. <span>___</span> ground ala <span>___</span>, sent to me <span>___</span>.”
+                        </p>
+                      </div>
+                      <button class="order-btn">Create my plan!</button>
+                    </div>
+                  </div>
+                </section>
+              </main>
+              <footer class="site-footer">
+                <div class="container footer-container">
+                  <div class="footer-wrap">
+                    <div class="footer-block">
+                      <a href="/index.html">
+                        <img src="./assets/images/footer-logo.svg" alt="coffe roaster logo two coffe and text">
+                      </a>
+                      <ul class="site-footer__list">
+                        <li class="site-footer__item">
+                          <a class="site-footer__link" href="/index.html">HOME</a>
+                        </li>
+                        <li class="site-footer__item">
+                          <a class="site-footer__link" href="/about.html">ABOUT US</a>
+                        </li>
+                        <li class="site-footer__item">
+                          <a class="site-footer__link" href="/plan.html">Create your plan</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-icon">
+                      <a class="footer-icon__style" href="
+                      https://www.facebook.com/login">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"/>
+                      </svg>
+                      
+                    </a>
+                    <a class="footer-icon__style" href="
+                    https://twitter.com/login">
+                    <svg width="24" height="20" viewBox="0 0 24 20" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24 2.55705C23.117 2.94905 22.168 3.21305 21.172 3.33205C22.189 2.72305 22.97 1.75805 23.337 0.608047C22.386 1.17205 21.332 1.58205 20.21 1.80305C19.313 0.846047 18.032 0.248047 16.616 0.248047C13.437 0.248047 11.101 3.21405 11.819 6.29305C7.728 6.08805 4.1 4.12805 1.671 1.14905C0.381 3.36205 1.002 6.25705 3.194 7.72305C2.388 7.69705 1.628 7.47605 0.965 7.10705C0.911 9.38805 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10605C22.505 4.41105 23.34 3.54405 24 2.55705Z"/>
+                    </svg>
+                    
+                  </a>
+                  <a class="footer-icon__style" href="https://instagram.com">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM5.838 12C5.838 8.597 8.597 5.838 12 5.838C15.403 5.838 18.162 8.597 18.162 12C18.162 15.404 15.403 18.163 12 18.163C8.597 18.163 5.838 15.403 5.838 12ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM16.965 5.595C16.965 4.8 17.61 4.155 18.406 4.155C19.201 4.155 19.845 4.8 19.845 5.595C19.845 6.39 19.201 7.035 18.406 7.035C17.61 7.035 16.965 6.39 16.965 5.595Z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- ===================== -->
+          <script>
+            function show(anything){
+              document.querySelector('.textbox').value = anything;
+            }
+            let dropdown = document.querySelector('.dropdown');
+            dropdown.onclick = function(){
+              dropdown.classList.toggle('active');
+            }
+            
+          </script>
+          <!-- 1================= -->
+          <script>
+            
+            function show(anything){
+              document.querySelector('.textbox1').value = anything;
+            }
+            let dropdown1 = document.querySelector('.dropdown1');
+            dropdown1.onclick = function(){
+              dropdown1.classList.toggle('active1');
+            }
+          </script>
+          <!-- 2================= -->
+          <script>
+            
+            function show(anything){
+              document.querySelector('.textbox2').value = anything;
+            }
+            let dropdown2 = document.querySelector('.dropdown2');
+            dropdown2.onclick = function(){
+              dropdown2.classList.toggle('active2');
+            }
+          </script>
+          <!-- 3============== -->
+          <script>
+            
+            function show(anything){
+              document.querySelector('.textbox3').value = anything;
+            }
+            let dropdown3 = document.querySelector('.dropdown3');
+            dropdown3.onclick = function(){
+              dropdown3.classList.toggle('active3');
+            }
+          </script>
+          <!-- 4============ -->
+          <script>
+            
+            function show(anything){
+              document.querySelector('.textbox4').value = anything;
+            }
+            let dropdown4 = document.querySelector('.dropdown4');
+            dropdown4.onclick = function(){
+              dropdown4.classList.toggle('active4');
+            }
+          </script>
+        </body>
+        </html>

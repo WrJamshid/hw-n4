@@ -1,0 +1,143 @@
+.plan-block
+{
+  background-image: url('/assets/images/plan-bg-img.jpg');
+  background-repeat: no-repeat;
+  margin-bottom: 164px;
+  border-radius: 12px;
+}
+.plan-title
+{
+  font-family: $main-font;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  padding-top: 135px;
+  padding-left: 85px;
+}
+.plan-description
+{
+  max-width: 445px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin-top: 32px;
+  padding-bottom: 134px;
+  padding-left: 85px;
+}
+.plan-page{
+  max-width: 1280px;
+  background: #2C343E;
+  padding-top: 91px;
+  padding-bottom: 109px;
+  padding-left: 85px;
+  border-radius: 12px;
+}
+.plan__text-white
+{
+  color: #FEFCF7;
+}
+.plan-page__line
+{
+  &::after
+  {
+    background: transparent;
+  }
+  &::before
+  {
+    background: transparent;
+  }
+}
+.plan-page__span-line
+{
+  background: transparent;
+}
+@media screen and (max-width:1200px)
+{
+  .plan-page
+  {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width:935px)
+{
+  .plan-page
+  {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width:900px)
+{
+  .plan-page
+  {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width:770px)
+{
+  .plan-block
+  {
+    background-position-x: center;
+    margin-bottom: 144px;
+  }
+  .plan-title
+  {
+    font-size: 48px;
+    line-height: 48px;
+    padding-top: 127px;
+    padding-left: 58px;
+  }
+  .plan-description
+  {
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 398px;
+    font-weight: 400;
+    margin-top: 24px;
+    padding-bottom: 126px;
+    padding-left: 58px;
+  }
+}
+@media screen and (max-width:654px)
+{
+  .plan-page
+  {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width:475px)
+{
+  
+  .plan-block
+  {
+    background-image: url('/assets/images/plan-mobile-bg-img.jpg');
+    margin-bottom: 120px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .plan-title
+  {
+    
+    max-width: 279px;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 101px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+  .plan-description
+  {
+    max-width: 279px;
+    margin-top: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
